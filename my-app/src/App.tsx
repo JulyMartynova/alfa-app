@@ -8,7 +8,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Router basename="/my-app">  {/* Укажите вашу подпапку */}
+    <Router basename="/">
       <Routes>
         <Route path="/products" element={<ProductsPage/>}/>
         <Route path="/create-product" element={<CreateProductPage/>} />
