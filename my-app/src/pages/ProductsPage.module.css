@@ -1,0 +1,153 @@
+.wrapper {
+    margin: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  /* Overlay Styles */
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay .filters {
+    z-index: 1001;
+    width: 60%;
+    position: relative;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  .close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #666;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Form Styles */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .filterGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .filterGroup label {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .filterGroup input,
+  .filterGroup textarea,
+  .filterGroup select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+  }
+  
+  .filterGroup input:focus,
+  .filterGroup textarea:focus,
+  .filterGroup select:focus {
+    outline: none;
+    border-color: #646cff;
+  }
+  
+  .filterGroup input[type="number"] {
+    width: 100%;
+  }
+  
+  .filterGroup textarea {
+    resize: vertical;
+  }
+  
+  .filters button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .filters button:first-of-type {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .filters button:first-of-type:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .filters button:last-of-type {
+    background-color: #646cff;
+    color: white;
+  }
+  
+  .filters button:last-of-type:hover {
+    background-color: #535bf2;
+  }
+  
+  
+  .loading,
+  .error {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .error {
+    color: #ff4757;
+  }
+  
+  .create {
+    border-radius: 50%;
+    background-color: #646cff;
+    color: white;
+    border: none;
+    width: 3em;
+    height: 3em;
+    font-size: 1.5em;
+    position: fixed;
+    right: 5vw;
+    bottom: 5vh;
+    opacity: 0.6;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .create:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .wrapper {
+      margin: 1rem;
+      gap: 2rem;
+    }
+  }

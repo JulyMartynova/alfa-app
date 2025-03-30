@@ -1,0 +1,126 @@
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .filterGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Стили для группы со слайдером */
+  .filterGroup:first-child {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .filterGroup label {
+    font-weight: 500;
+    color: #333;
+    width: 100%;
+  }
+  
+  .searchInput,
+  .selectInput {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-appearance: none; /* Убираем стандартные стили для select */
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 12px;
+  }
+  
+  /* Кастомная стрелка для select */
+  .selectInput {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    padding-right: 2rem; /* Отступ для стрелки */
+  }
+  
+  .searchInput:focus,
+  .selectInput:focus {
+    outline: none;
+    border-color: #646cff;
+  }
+  
+  .searchInput {
+    padding-left: 2.5rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23999' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 1rem center;
+    background-size: 1rem;
+  }
+  
+  .checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .checkboxInput {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+  }
+  
+  /* Стили для слайдера */
+  .rc-slider {
+    width: 100%;
+    margin: 0.5rem 0 1.5rem;
+  }
+  
+  .rc-slider-rail {
+    height: 4px;
+    width: 100%;
+  }
+  
+  .rc-slider-track {
+    height: 4px;
+  }
+  
+  .rc-slider-handle {
+    width: 18px;
+    height: 18px;
+    margin-top: -7px;
+    border: solid 2px #646cff;
+    background-color: white;
+  }
+  
+  .range-labels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Позиционирование для контейнера слайдера */
+  .slider-container {
+    position: relative;
+    width: 100%;
+    padding-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
