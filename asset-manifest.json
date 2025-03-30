@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/alfa-app/my-app/static/css/main.d5365d85.css",
+    "main.js": "/alfa-app/my-app/static/js/main.25bebe21.js",
+    "static/js/453.32ec0147.chunk.js": "/alfa-app/my-app/static/js/453.32ec0147.chunk.js",
+    "index.html": "/alfa-app/my-app/index.html",
+    "main.d5365d85.css.map": "/alfa-app/my-app/static/css/main.d5365d85.css.map",
+    "main.25bebe21.js.map": "/alfa-app/my-app/static/js/main.25bebe21.js.map",
+    "453.32ec0147.chunk.js.map": "/alfa-app/my-app/static/js/453.32ec0147.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5365d85.css",
+    "static/js/main.25bebe21.js"
+  ]
+}
