@@ -45,12 +45,8 @@ const FiltersComponent: React.FC<FiltersProps> = ({
             boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
           }}
         />
-        <div className={styles.rangeLabels}>
-    <span>${minPrice}</span>
-    <span>${maxPrice}</span>
-  </div>
       </div>
-      
+
       <div className={styles.filterGroup}>
         <input
           type="text"
